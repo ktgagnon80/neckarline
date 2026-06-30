@@ -30,7 +30,7 @@ export const REGION = {
     // your domain in the MapTiler dashboard (Allowed HTTP origins).
     // Override the key at build time with VITE_MAPTILER_KEY if set.
     tileStyleUrl: (key) => `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`,
-    maptilerKey: "yebiMhQRG0InQHn2UAjE",
+    maptilerKey: "1MYlMKdc2WN8PoWGdMRR",
     bounds: { minLat: 49.38, maxLat: 49.56, minLng: 8.43, maxLng: 8.72 },
     // A characteristic waterway drawn on the schematic fallback, as
     // [lng,lat] control points. Here: the Neckar/Rhine sweep.
