@@ -1,0 +1,4 @@
+# API calls go to the Worker (configured as a Pages Function or
+# routed Worker on the same domain). SPA fallback for everything else.
+/api/*  /api/:splat  200
+/*      /index.html  200

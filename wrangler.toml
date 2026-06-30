@@ -1,0 +1,16 @@
+# Cloudflare Worker config for the Neckarline backend proxy.
+# Deploy:  npx wrangler deploy worker/index.js
+# Secrets (set once, never committed to git):
+#   npx wrangler secret put VRN_API_KEY
+#   npx wrangler secret put VRN_TRIAS_URL
+#   npx wrangler secret put VRN_GTFSRT_VEHICLES
+#   npx wrangler secret put VRN_GTFSRT_ALERTS
+
+name = "neckarline-api"
+main = "worker/index.js"
+compatibility_date = "2025-01-01"
+
+# Free tier: 100,000 requests/day, no cold starts.
+# Routes are attached in the Cloudflare dashboard once your
+# Pages project and Worker share a domain, so /api/* on your
+# site is served by this Worker.
